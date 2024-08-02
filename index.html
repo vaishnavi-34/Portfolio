@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        header {
+            background: #333;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+            animation: slideDown 0.5s ease-in-out;
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 1em;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav ul li a:hover {
+            color: #FFD700;
+        }
+
+        section {
+            padding: 2em;
+            text-align: center;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .project {
+            margin: 1em 0;
+            padding: 1em;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .project:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+
+        a {
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+
+        a:hover {
+            color: #FFD700;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Myself Vaishnavi, a budding Front-End Developer with a passion for creating beautiful and functional projects.</p> 
+        <p>I don't have a traditional background in front-end development.</p>
+        <p>I've been diligently learning and honing my skills through self-study and hands-on projects.</p>
+        <p>Currently, I'm working as an intern at Internite Corporation.</p>
+    </section>
+
+    <section id="project">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Interactive Quiz Application</h3>
+            <p>This project is an interactive quiz application developed using HTML, CSS, and JavaScript.</p> 
+            <p>It includes multiple-choice questions,and displays the results and correct answers at the end.</p> 
+            <p>The application is designed to be responsive and user-friendly, providing a seamless experience across different devices.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Please connect with me on <a href="www.linkedin.com/in/vaishnavi-kelkar-9a2522300" target="_blank">Linkedln here.</a></p>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+
+
+
+
